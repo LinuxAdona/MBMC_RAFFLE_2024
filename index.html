@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBMC Raffle 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>MBMC Raffle 2024</h1>
+
+        <div class="group-buttons">
+            <button class="group-btn" onclick="setGroup(1)">Group 1</button>
+            <button class="group-btn" onclick="setGroup(2)">Group 2</button>
+            <button class="group-btn" onclick="setGroup(3)">Group 3</button>
+            <button class="group-btn" onclick="setGroup(4)">Group 4</button>
+        </div>
+
+        <div class="raffle-section">
+            <button id="rollBtn" onclick="roll()">Roll</button>
+            <div id="rollingMessage">Press a number and roll!</div>
+            <h2>Winner:</h2>
+            <p id="winner">None yet</p>
+        </div>
+
+        <div class="file-history-container">
+            <!-- Custom File Input -->
+            <label for="fileInput" id="fileInputLabel">Choose Excel File</label>
+            <input type="file" id="fileInput" accept=".xlsx" onchange="handleFileUpload()" />
+
+            <div class="history-section">
+                <button id="toggleHistoryBtn" onclick="toggleHistory()">Show History</button>
+                <div id="historyListContainer" style="display: none;">
+                    <h3>History of Winners:</h3>
+                    <ul id="historyList"></ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- use version 0.20.3 -->
+    <script lang="javascript" src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
