@@ -1,0 +1,156 @@
+/* General styling for the body and container */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    align-content:space-between;
+}
+
+.group-buttons {
+    display: none;
+}
+
+.group-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.group-btn:hover {
+    background-color: #45a049;
+}
+
+.raffle-section {
+    margin: 20px 0;
+}
+
+#rollBtn {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#rollBtn:hover {
+    background-color: #1976D2;
+}
+
+#rollingMessage {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.history-section {
+    margin-top: 20px;
+}
+
+#toggleHistoryBtn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #FFC107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#toggleHistoryBtn:hover {
+    background-color: #FFB300;
+}
+
+#historyListContainer {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#historyList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#historyList li {
+    padding: 8px 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styling for the file input */
+#fileInput {
+    display: none;  /* Hide the default file input */
+}
+
+.custom-file-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.custom-file-btn:hover {
+    background-color: #45a049;
+}
+
+#fileInputLabel {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#fileInputLabel:hover {
+    background-color: #45a049;
+}
+
+
